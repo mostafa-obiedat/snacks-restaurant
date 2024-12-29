@@ -1,6 +1,6 @@
 # snacks-restaurant
 
-#Page 1
+# Page 1
 User Greeting:
 
 Asks the user for their name and gender.
@@ -16,7 +16,7 @@ Takes a number input (1-9) from the user.
 Outputs the number in words or an error message for invalid inputs.
 ---
 
-#Page 2
+# Page 2
 Gender Validation:
 Ensures the user inputs a valid gender ("male" or "female") using a while loop.
 Counting Loop:
@@ -26,11 +26,11 @@ Ensures the user inputs a number between 0 and 100, with error handling via a wh
 Sum Calculator:
 Calculates the sum of all integers from 0 to a user-defined number using a for loop.
 
-#Live Demo:
+# Live Demo:
 
 https://mostafa-obiedat.github.io/snacks-restaurant/
 
-#Technologies Used:
+# Technologies Used:
 
 -HTML5
 

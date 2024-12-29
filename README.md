@@ -10,6 +10,4 @@ Experience the website here: Snacks Restaurant
 
 -HTML5
 
--CSS3
-
 -JavaScript

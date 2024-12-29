@@ -28,7 +28,7 @@ Calculates the sum of all integers from 0 to a user-defined number using a for l
 
 #Live Demo:
 
-Experience the website here: Snacks Restaurant
+(https://mostafa-obiedat.github.io/snacks-restaurant/)
 
 #Technologies Used:
 

@@ -1,60 +1,46 @@
-//Ex1
-let userName = prompt('please enter your name:' );
-let gender = prompt('please enter your gender:' );
-if (gender == "male"){
-    alert('Welcome Mr '+ userName);
-}
-else if (gender == "female"){
-    alert('Welcome Ms '+ userName);
-}
-else{
-    alert('Welcome ' + userName)
-}
-let order = prompt('please enter your order: shawarma, zinger, or burger' );
-alert('your order '+ "("+order+") " +'is being prepared ')
-console.log("name: "+userName + ", order: "+ order);
+
+let x = prompt('please enter your name:' );
+let y = prompt('please enter your gender:' );
+gender(y); 
+let a = prompt('please enter your age:' );
+let z = prompt('please enter your order: shawarma, zinger, or burger' );
+alert('your order '+ "("+ z+") " +'is being prepared ')
 
 
-
-
-
-//Q2
-let x = parseInt(prompt('please enter a number'));
-switch(x) {
-    case 1:
-    console.log("ONE");
-    break;
-    case 2: 
-    console.log("TWO");
-    break;
-    case 3:
-    console.log("THREE");
-    break;
-    case 4:
-    console.log("FOUR");
-    break;
-    case 5:
-    console.log("FIVE");
-    break;
-    case 6:
-    console.log("SIX");
-    break;
-    case 7:
-    console.log("SEVEN");
-    break;
-    case 8:
-    console.log("EIGHT");
-    break;
-    case 9:
-    console.log("NINE");
-    break;
-    default:
-    console.log("PLEASE TRY AGAIN");
+ function gender(y){
+    while(y !== "male" && y !== "female"){
+       y = prompt('please enter a valid gender:');
+    }
+    if (y == "male"){
+       alert('Welcome Mr '+ x);
+    }
+    else if (y == "female"){
+       alert('Welcome Ms '+ x);
+    }
+    else{
+       alert('Welcome ' + x);
+    }
+    return y;
 }
 
 
 
 
+const div = document.getElementById("container");
+const para = document.createElement("p");
+para.innerHTML = x;
+const list = document.createElement("ol");
+const item1 = document.createElement("li");
+item1.innerHTML = "Gender:"+y;
+const item2 = document.createElement("li");
+item2.innerHTML = "Age : "+a;
+const item3 = document.createElement("li");
+item3.innerHTML = "Order : "+z;
+div.appendChild(para);
+div.appendChild(list);
+list.appendChild(item1);
+list.appendChild(item2);
+list.appendChild(item3);
 
 
 

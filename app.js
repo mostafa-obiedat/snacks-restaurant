@@ -1,29 +1,28 @@
-//Ex1
-var array=[];
- array[0] = prompt('please enter your name:' );
- array[1] = prompt('please enter your gender:' );
- gender();
- array[2] = prompt('please enter your order: shawarma, zinger, or burger' );
- alert('your order '+ "("+array[2]+") " +'is being prepared ')
+//Ex5
+const form1 = document.getElementById("form1");
+const details = document.getElementById("details");
 
-for(i=0; i<=array.length; i++){
-console.log(array[i]);
-}
 
-function gender(){
-    while(array[1] !== "male" && array[1] !== "female"){
-       array[1] = prompt('please enter a valid gender:');
-    }
-   if (array[1] == "male"){
-       alert('Welcome Mr '+ array[0]);
-   }
-   else if (array[1] == "female"){
-       alert('Welcome Ms '+ array[0]);
-   }
-   else{
-       alert('Welcome ' + array[0])
-   }
-}
+form1.addEventListener("submit",function(events){
+    events.preventDefault(); 
+    const username = document.getElementById("username").value;
+  const age = document.getElementById("age").value;
+  const gender = document.getElementById("gender").value;
+
+  const orderChoice = document.querySelector('input[name="orderChoice"]:checked');
+  if (!orderChoice) {
+    details.textContent = "Please select an order choice.";
+    return;
+  }
+  const selectedOrder = orderChoice.value;
+  details.innerHTML=
+ `
+    <strong>Username:</strong> ${username} <br>
+    <strong>Age:</strong> ${age} <br>
+    <strong>Gender:</strong> ${gender} <br>
+    <strong>Order Choice:</strong> ${selectedOrder}`
+  ;});
+
 
 
 
